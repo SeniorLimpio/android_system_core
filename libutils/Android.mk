@@ -24,7 +24,7 @@ commonSources:= \
 	FileMap.cpp \
 #ifdef STE_HARDWARE
 	Flattenable.cpp \
-#else
+#endif
 	JenkinsHash.cpp \
 	LinearAllocator.cpp \
 	LinearTransform.cpp \
