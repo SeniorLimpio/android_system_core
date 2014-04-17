@@ -22,9 +22,6 @@ commonSources:= \
 	BlobCache.cpp \
 	CallStack.cpp \
 	FileMap.cpp \
-#ifdef STE_HARDWARE
-	Flattenable.cpp \
-#endif
 	JenkinsHash.cpp \
 	LinearAllocator.cpp \
 	LinearTransform.cpp \
@@ -45,6 +42,11 @@ commonSources:= \
 	Unicode.cpp \
 	VectorImpl.cpp \
 	misc.cpp
+
+ifeq ($(STE_HARDWARE),true)
+commonSources:= \
+        Flattenable.cpp
+endif
 
 host_commonCflags := -DLIBUTILS_NATIVE=1 $(TOOL_CFLAGS)
 
