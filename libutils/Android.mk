@@ -22,7 +22,9 @@ commonSources:= \
 	BlobCache.cpp \
 	CallStack.cpp \
 	FileMap.cpp \
+#ifdef STE_HARDWARE
 	Flattenable.cpp \
+#else
 	JenkinsHash.cpp \
 	LinearAllocator.cpp \
 	LinearTransform.cpp \
