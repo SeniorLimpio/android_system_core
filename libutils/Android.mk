@@ -44,7 +44,7 @@ commonSources:= \
 	misc.cpp
 
 ifeq ($(STE_HARDWARE),true)
-commonSources:= \
+commonSources+= \
         Flattenable.cpp
 endif
 
