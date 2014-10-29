@@ -208,22 +208,13 @@ typedef enum {
     AUDIO_FORMAT_AC3_DM              =  (AUDIO_FORMAT_AC3 |
                                           AUDIO_FORMAT_DOLBY_SUB_DM),
     AUDIO_FORMAT_EAC3_DM             =  (AUDIO_FORMAT_EAC3 |
-<<<<<<< HEAD
-
-=======
                                           AUDIO_FORMAT_DOLBY_SUB_DM),
 #endif
->>>>>>> dc2c124... audio: Unhide PCM offload enums
     /*Offload PCM formats*/
     AUDIO_FORMAT_PCM_16_BIT_OFFLOAD  = (AUDIO_FORMAT_PCM_OFFLOAD |
                                         AUDIO_FORMAT_PCM_SUB_16_BIT),
     AUDIO_FORMAT_PCM_24_BIT_OFFLOAD  = (AUDIO_FORMAT_PCM_OFFLOAD |
                                         AUDIO_FORMAT_PCM_SUB_8_24_BIT),
-<<<<<<< HEAD
-
-#endif
-=======
->>>>>>> dc2c124... audio: Unhide PCM offload enums
 } audio_format_t;
 
 enum {
